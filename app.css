@@ -1,0 +1,55 @@
+/* * {
+    background-color: orange;
+} */
+
+.title {
+    font-weight: bold;
+    font-size: 3em;
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.all {
+    /* display: inline-block; */
+    text-align: center;
+    color: white;
+}
+
+#clock {
+    padding-top: 0.5em;
+    color: white;
+    font-size: 8em;
+    padding-bottom: .5em;
+}
+
+.btn {
+    width: 12em;
+    height: 3em;
+}
+
+.reset {
+    background-color: white;
+    color: black;
+    margin: 10px;
+}
+
+.start {
+    background-color: white;
+    color: black;
+    margin: 10px;
+}
+
+.stop {
+    background-color: white;
+    color: black;
+    margin: 10px;
+}
+
+#footer {
+    position: relative;
+    margin: auto auto;
+    bottom: 0;
+    /* width: 100%; */
+}
