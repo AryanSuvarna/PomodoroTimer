@@ -42,7 +42,7 @@ function breakTimer() {
             background.style.backgroundColor = "#5FBA7C";
             isBreak = false
             audio.play();
-            numSessions.innerText = "Number of sessions: " + sessions;
+            numSessions.innerText = "Number of Completed Sessions: " + sessions;
         }
         else {
             minutes --;
@@ -99,7 +99,7 @@ resetButton.onclick =  function() {
     minutes = 25;
     seconds = 0;
     sessions = 0;
-    numSessions.innerText = "Number of Sessions: 0"
+    numSessions.innerText = "Number of Completed Sessions: 0"
     state.innerText = "Get ready to put in work!"
     clock.innerText = "25:00";
 
