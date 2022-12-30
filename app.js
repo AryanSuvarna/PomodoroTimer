@@ -76,34 +76,31 @@ function twoDigits(num) {
 
 startButton.onclick =  function() {
     if (startButtonPressed == false && isBreak == false) {
-        console.log("starting...");
         background.style.backgroundColor = "#5FBA7C";
-        increment = setInterval(selectTimer,10);
+        increment = setInterval(selectTimer,1000);
         startButtonPressed = true;
     }
     else if (startButtonPressed == false && isBreak == true) {
-        console.log("starting...");
-        increment = setInterval(selectTimer,10);
+        increment = setInterval(selectTimer,1000);
         startButtonPressed = true;
     }
     else {console.log("already pressed")}
 }
 
 stopButton.onclick =  function() {
-    console.log("stop...");
     clearInterval(increment);
     startButtonPressed = false;
 }
 
 resetButton.onclick =  function() {
-    console.log("reset...");
     background.style.backgroundColor = "orange";
     startButtonPressed = false;
     clearInterval(increment);
     minutes = 25;
     seconds = 0;
-    clock.innerText = "25:00";
     sessions = 0;
     numSessions.innerText = "Number of Sessions: 0"
     state.innerText = "Get ready to put in work!"
+    clock.innerText = "25:00";
+
 }
